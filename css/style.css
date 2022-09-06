@@ -1,0 +1,130 @@
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: #2B2D42;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.menu__lista {
+    display: flex;
+    gap: .75rem;
+    justify-content: space-between;
+    left: 1rem;
+    position: fixed;
+    top: 1rem;
+}
+
+.menu__link {
+    color: #EDF2F4;
+}
+
+.menu__link:active {
+    color: #D90429;
+}
+
+.calculadora, .conversor, .sobre {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 80vw;
+}
+
+.campo__titulo {
+    color: #EDF2F4;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.campo__entrada {
+    border: 1px solid #EDF2F4;
+    color: #2B2D42;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    display: block;
+    outline: none;
+    padding: .5rem;
+    transition: border-color 200ms;
+    width: 100%;
+}
+
+.campo__entrada:focus {
+    border-color: #D90429;
+}
+
+.campo__calculo {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.calculo__saida {
+    color: #2B2D42;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    outline: none;
+    pointer-events: none;
+    padding: .5rem;
+    width: 70%;
+}
+
+.calculo__calcular {
+    background-color: #EF233C;
+    border-radius: 5px;
+    box-shadow: 0 3px black;
+    color: #EDF2F4;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    transition: background-color 250ms;
+    width: 30%;
+}
+
+.calculo__calcular:hover {
+    background-color: #EDF2F4;
+    color: #EF233C;
+}
+
+.calculo__calcular:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.sobre__foto {
+    background-image: url("https://drive.google.com/uc?export=view&id=10an0hpI01kjqqf61LgwBsgUGZPQl6oJn");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.sobre__destaque {
+    color: #EF233C;
+}
+
+.sobre__nome {
+    color: #EDF2F4;
+}
+
+.sobre__subtitulo {
+    color: #EDF2F4;
+}
+
+@media screen and (min-width: 425px) {
+    .campo__titulo {
+        font-size: 2rem;
+    }
+}
