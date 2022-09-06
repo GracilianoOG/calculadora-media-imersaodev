@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Calculadora de Média</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Calculadora | Conversor</title>
 </head>
-<body>
+<body class="container">
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link" href="#calculadora">Calculadora</a></li>
+                <li class="menu__item"><a class="menu__link" href="#conversor">Conversor</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculadora" class="calculadora">
+            <h2 class="campo__titulo">Calculadora de Média</h2>
+            <input class="campo__entrada" type="number" value="0" min="0" max="10" data-calc-input>
+            <input class="campo__entrada" type="number" value="0" min="0" max="10" data-calc-input>
+            <input class="campo__entrada" type="number" value="0" min="0" max="10" data-calc-input>
+            <div class="campo__calculo">
+                <input class="calculo__saida" type="text" value="0" readonly data-calc-output>
+                <button class="calculo__calcular" type="button" data-calc-button>Calcular</button>
+            </div>
+        </section>
+
+        <section id="conversor" class="conversor">
+            <h2 class="campo__titulo">Conversor de temperatura</h2>
+            <select class="campo__entrada" data-conv-options>
+                <option value="c-f">Celsius para Fahrenheit</option>
+                <option value="f-c">Fahrenheit para Celsius</option>
+            </select>
+            <input class="campo__entrada" type="number" value="0" data-conv-input>
+            <div class="campo__calculo">
+                <input class="calculo__saida" type="text" value="0" data-conv-output>
+                <button class="calculo__calcular" type="button" data-conv-button>Calcular</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre__foto"></div>
+            <h2 class="sobre__nome">Desenvolvido por <span class="sobre__destaque">Gabriel</span> =)</h2>
+            <h3 class="sobre__subtitulo">Obrigado <span class="sobre__destaque">Alura</span>!</h3>
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
