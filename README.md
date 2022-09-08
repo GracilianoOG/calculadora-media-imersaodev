@@ -28,6 +28,6 @@ Esse projeto faz parte do primeiro dia do desafio da Imersão Dev da Alura.
 
 Eu resolvi tentar criar meu projeto do zero, o que me fez demorar mais do que o previsto, mas valeu a pena! 😅
 
-📚 [Paleta de cores utilizada](https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429)
-📚 [Fonte dos textos](https://fonts.google.com/specimen/Bebas+Neue?query=Bebas+Neue)
-📚 [Gerador de favicon](https://favicon.io/)
+* 📚 [Paleta de cores utilizada](https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429)
+* 📚 [Fonte dos textos](https://fonts.google.com/specimen/Bebas+Neue?query=Bebas+Neue)
+* 📚 [Gerador de favicon](https://favicon.io/)
